@@ -18,12 +18,12 @@ Use JSHint for formatting, and make sure to follow it's advice. You should set J
 	for(var i=0;i<10;i++) someFunction();
 
 	// Good 
-	if ( condition ) {
+	if (condition) {
 		doSomething();
 	}
 
 	
-	for ( var i = 0; i < 10; i++ ) {
+	for (var i = 0; i < 10; i++) {
 		SomeFunction();
 	}
 
