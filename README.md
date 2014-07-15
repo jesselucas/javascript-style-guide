@@ -40,3 +40,39 @@ In general we prefer the formating of JsFormat - https://github.com/jdc0589/JsFo
 	// Good
 	var item = {};
 ```
+
+##Arrays
+
+* Use literal notation when declaring arrays
+
+```
+	// Bad
+	var list = new Array();
+	
+	// Good
+	var list = [];
+```
+
+##Conditionals
+
+* Use identity comparison operators
+
+```
+	// Bad
+	if (foo == 1) {
+		doSomething();
+	} else if (foo != 1) {
+		doSomethingElse();
+	} else {
+		//code
+	}
+	
+	// Good
+	if (foo === 1) {
+		doSomething();
+	} else if (foo !== 1) {
+		doSomethingElse();
+	} else {
+		//code
+	}
+```
