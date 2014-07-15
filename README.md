@@ -9,7 +9,7 @@ Use JSHint for formatting, and make sure to follow it's advice. You should set J
 
 * Indent with tabs
 //example
-*	Always use braces for if/else/for/while/try and always use line breaks.
+* Always use braces for if/else/for/while/try with  line breaks and whitespace.
 
 ```
 	// Bad
@@ -22,9 +22,21 @@ Use JSHint for formatting, and make sure to follow it's advice. You should set J
 		doSomething();
 	}
 
-	var i = 0;
-	for ( ; i < 10; i++ ) {
+	
+	for ( var i = 0; i < 10; i++ ) {
 		SomeFunction();
 	}
 
+```
+
+##Objects
+
+* Use literal notation when declaring objects
+
+```
+	// Bad
+	var item = new Object();
+	
+	// Good
+	var item = {};
 ```
