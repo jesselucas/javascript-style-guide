@@ -7,6 +7,8 @@ Use JSHint for formatting, and make sure to follow it's advice. You should set J
 
 ##Spacing
 
+In general we prefer the formating of JsFormat - http://jsbeautifier.org/
+
 * Indent with tabs
 //example
 * Always use braces for if/else/for/while/try with  line breaks and whitespace.
