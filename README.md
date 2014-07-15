@@ -11,7 +11,7 @@ In general we prefer the formating of JsFormat - https://github.com/jdc0589/JsFo
 
 * Always use braces for if/else/for/while/try with  line breaks and whitespace.
 
-```
+```javascript
 	// Bad
 	if(condition) doSomething();
 	
@@ -33,7 +33,7 @@ In general we prefer the formating of JsFormat - https://github.com/jdc0589/JsFo
 
 * Use literal notation when declaring objects
 
-```
+```javascript
 	// Bad
 	var item = new Object();
 	
@@ -45,7 +45,7 @@ In general we prefer the formating of JsFormat - https://github.com/jdc0589/JsFo
 
 * Use literal notation when declaring arrays
 
-```
+```javascript
 	// Bad
 	var list = new Array();
 	
@@ -57,7 +57,7 @@ In general we prefer the formating of JsFormat - https://github.com/jdc0589/JsFo
 
 * Use identity comparison operators
 
-```
+```javascript
 	// Bad
 	if (foo == 1) {
 		doSomething();
