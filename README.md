@@ -17,13 +17,13 @@ Use JSHint for formatting, and make sure to follow it's advice. You should set J
 	
 	for(var i=0;i<10;i++) someFunction();
 
-	//Good 
+	// Good 
 	if ( condition ) {
 		doSomething();
 	}
 
 	var i = 0;
-	for (; i < 10; i++) {
+	for ( ; i < 10; i++ ) {
 		SomeFunction();
 	}
 
