@@ -66,18 +66,18 @@ var list = [];
 if (foo == 1) {
     doSomething();
 } else if (foo != 1) {
-    doSomethingElse();
+    doSomethingIfElse();
 } else {
-    //code
+    doSomethingElse();
 }
 
 // Good
 if (foo === 1) {
     doSomething();
 } else if (foo !== 1) {
-    doSomethingElse();
+    doSomethingIfElse();
 } else {
-    //code
+    doSomethingElse();
 }
 ```
 * The only exception is when checking undefined or null against null
