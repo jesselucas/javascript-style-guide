@@ -253,7 +253,7 @@ JavaScript Style Guide
     ```
 
 
-## Type Checking - [jQuery Core Style Guidelines](http://contribute.jquery.org/style-guide/js/)
+## Type Checking
 
 - String:
 
