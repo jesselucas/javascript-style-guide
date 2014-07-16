@@ -2,7 +2,7 @@ JavaScript Style Guide
 ======================
 ##General
 
-"All code in any code-base should look like a single person typed it, no matter how many people contributed." - [idomatic.js](https://github.com/rwaldron/idiomatic.js/#all-code-in-any-code-base-should-look-like-a-single-person-typed-it-no-matter-how-many-people-contributed)
+"All code in any code-base should look like a single person typed it, no matter how many people contributed." - [idiomatic.js](https://github.com/rwaldron/idiomatic.js/#all-code-in-any-code-base-should-look-like-a-single-person-typed-it-no-matter-how-many-people-contributed)
 
 ##Linting
 
@@ -81,7 +81,7 @@ if (foo === 1) {
 
 ##Sources and Other Useful Guides
 * [Google](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
-* [idomatic.js](https://github.com/rwaldron/idiomatic.js/)
+* [idiomatic.js](https://github.com/rwaldron/idiomatic.js/)
 * [jQuery](http://contribute.jquery.org/style-guide/js/)
 * [Airbnb](https://github.com/airbnb/javascript)
 * [Douglas Crockford](http://javascript.crockford.com/code.html)
