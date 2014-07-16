@@ -172,24 +172,26 @@ if (item) {
 
 ##Naming
 
-- Make variabls and function names full words and try to be descriptive using camelCase
+- Make variables and function names full words and try to be descriptive using camelCase
 
 ```
 // Bad
 function check(w) {
+    // check wArray and return word
     return w;
 }
 
-var i, wArray=new Array();
-for(i=0;i<wArray.length;i++){check(wArray[i])};
+var i, mArray=new Array();
+for(i=0;i<wArray.length;i++){mArray.push(check())};
 
 // Good
 function checkForWord(word) {
+    // Check words array and return word
     return word;
 }
 
 var i = 0,
-    words = [],
+    matches = [],
     length = words.length,
     match;
 
