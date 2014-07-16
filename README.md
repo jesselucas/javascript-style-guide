@@ -328,6 +328,37 @@ JavaScript Style Guide
 
 ## Comments
 
+- Single line comments should have a space after the ```//``` and be on it's own line.
+
+    ```javascript
+    // Bad
+    var activeItems = []; //we'll use this array to store all active items
+
+    // Good
+    // We'll use this array to store all active items
+    var activeItems = [];
+    ```
+
+- Make sure there is an empty line above your comments
+    
+    ```javascript
+    // Bad
+    function setActiveItem() {
+        console.log("Setting the active item");
+        // Create a new item and add it to activeItems
+        var newItem = {};
+        activeItems.push(newItem);
+    }
+
+    // Good
+    function setActiveItem() {
+        console.log("Setting the active item");
+
+        // Create a new item and add it to activeItems
+        var newItem = {};
+        activeItems.push(newItem);
+    }
+    ```
 
 ## Sources and Other Useful Guides
 * [Google](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
