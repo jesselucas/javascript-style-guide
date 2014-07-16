@@ -14,7 +14,7 @@ Use JSHint for formatting, and make sure to follow it's advice. You should set J
 
 In general we prefer the formating of JsFormat - https://github.com/jdc0589/JsFormat
 
-* Always use braces for if/else/for/while/try with  line breaks and whitespace before and after parens.
+- Always use braces for if/else/for/while/try with  line breaks and whitespace before and after parens.
 
 ```javascript
 // Bad
@@ -35,7 +35,7 @@ for (var i = 0; i < 10; i++) {
 
 ##Objects
 
-* Use literal notation when declaring objects
+- Use literal notation when declaring objects
 
 ```javascript
 // Bad
@@ -47,7 +47,7 @@ var item = {};
 
 ##Arrays
 
-* Use literal notation when declaring arrays
+- Use literal notation when declaring arrays
 
 ```javascript
 // Bad
@@ -59,7 +59,7 @@ var list = [];
 
 ##Conditionals and Equality
 
-* Always use identity comparison operators (```===```) and (```!==```). The (```==```) and (```!=```) operators do type coercion and should not be used. 
+- Always use identity comparison operators (```===```) and (```!==```). The (```==```) and (```!=```) operators do type coercion and should not be used. 
 
 ```javascript
 // Bad
@@ -80,7 +80,7 @@ if (foo === 1) {
     doSomethingElse();
 }
 ```
-* The only exception is when checking undefined or null against null
+- The only exception is when checking undefined or null against null
 
 ```javascript
 // Check for both undefined and null values, for some important reason.
