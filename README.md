@@ -57,9 +57,9 @@ var list = new Array();
 var list = [];
 ```
 
-##Conditionals
+##Conditionals and Equality
 
-* Use identity comparison operators
+* Always use identity comparison operators (```===```) and (```!==```). The (```==```) and (```!=```) operators do type coercion and should not be used. 
 
 ```javascript
 // Bad
@@ -79,6 +79,12 @@ if (foo === 1) {
 } else {
     //code
 }
+```
+* The only exception is when checking undefined or null against null
+
+```javascript
+// Check for both undefined and null values, for some important reason.
+undefinedOrNull == null;
 ```
 
 ##Sources and Other Useful Guides
