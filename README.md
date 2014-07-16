@@ -87,6 +87,45 @@ if (foo === 1) {
 undefinedOrNull == null;
 ```
 
+##Functions
+
+- Declare your variables at the beginning of the function 
+
+```
+// Bad
+function bad() {
+    // some statements
+
+    var item = {};
+}
+
+// Good
+function good() {
+    var item = {};
+
+    // some statement
+}
+```
+
+- Don't declare a function in a non-function block
+
+```
+// Bad
+if (item) {
+    function bad() {
+        // don't do this
+    }
+}
+
+// Good
+var good;
+if (item) {
+    good = function good() {
+        // do this
+    };
+}
+```
+
 ##Sources and Other Useful Guides
 * [Google](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
 * [idiomatic.js](https://github.com/rwaldron/idiomatic.js/)
