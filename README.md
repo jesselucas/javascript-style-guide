@@ -291,12 +291,12 @@ JavaScript Style Guide
 - Function
 
     ```javascript 
-    jQuery.isFunction( object )
+    jQuery.isFunction(object)
     ```
     
 - Array: 
     ```javascript 
-    jQuery.isArray( object )
+    jQuery.isArray(object)
     ```
 
 - Element: 
