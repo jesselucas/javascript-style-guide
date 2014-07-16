@@ -1,5 +1,8 @@
 JavaScript Style Guide
 ======================
+
+- This is a collection of preferred styles from many different guides and sources. Please see [Sources and Other Useful Guides](#sources-and-other-useful-guides).
+
 ## Table of Contents
 
  * [General](#general)
