@@ -1,18 +1,35 @@
 JavaScript Style Guide
 ======================
-##General
+## Table of Contents
+
+ * [General](#general)
+ * [Linting](#linting)
+ * [Spacing](#spacing)
+ * [Variables and Assignments](#variables-and-assignments)
+ * [Objects](#objects)
+ * [Arrays](#arrays)
+ * [Conditionals and Equality](#conditionals-and-equality)
+ * [Functions](#functions)
+ * [Naming](#naming)
+ * [Quotes](#quotes)
+ * [Type Checking](#type-checking)
+ * [Comments](#comments)
+ * [Sources and Other Useful Guides](#sources-and-other-useful-guides)
+
+
+## General
 
 > "All code in any code-base should look like a single person typed it, no matter how many people contributed." - [idiomatic.js](https://github.com/rwaldron/idiomatic.js/#all-code-in-any-code-base-should-look-like-a-single-person-typed-it-no-matter-how-many-people-contributed)
 
 > "Arguments over style are pointless. There should be a style guide, and you should follow it" - Rebecca Murphey
 
-##Linting
+## Linting
 
 - Use JSHint for formatting, and make sure to follow it's advice. You should set JSHint options in a ```.jshintrc``` file. Read the JSHint docs for more information: http://www.jshint.com/docs/
 
 - Please reference the provided ```.jshintrc``` file for our preferred options
 
-##Spacing
+## Spacing
 
 - Always use braces for if/else/for/while/try with  line breaks and whitespace before and after parens.
 
@@ -77,7 +94,7 @@ JavaScript Style Guide
         i;
     ```
 
-##Objects
+## Objects
 
 - Use literal notation when declaring objects
 
@@ -89,7 +106,7 @@ JavaScript Style Guide
     var item = {};
     ```
 
-##Arrays
+## Arrays
 
 - Use literal notation when declaring arrays
 
@@ -101,7 +118,7 @@ JavaScript Style Guide
     var list = [];
     ```
 
-##Conditionals and Equality
+## Conditionals and Equality
 
 - Always use identity comparison operators (```===```) and (```!==```). The (```==```) and (```!=```) operators do type coercion and should not be used. 
 
@@ -131,7 +148,7 @@ JavaScript Style Guide
     undefinedOrNull == null;
     ```
 
-##Functions
+## Functions
 
 - Declare your variables at the beginning of the function 
 
@@ -170,7 +187,7 @@ JavaScript Style Guide
     }
     ```
 
-##Naming
+## Naming
 
 - Make variables and function names full words and try to be descriptive using camelCase
 
@@ -220,8 +237,8 @@ JavaScript Style Guide
         };
     }
     ```
-    
-##Quotes
+
+## Quotes
 
 - Use double quotes
 
@@ -236,7 +253,7 @@ JavaScript Style Guide
     ```
 
 
-##Type Checking - [jQuery Core Style Guidelines](http://contribute.jquery.org/style-guide/js/)
+## Type Checking - [jQuery Core Style Guidelines](http://contribute.jquery.org/style-guide/js/)
 
 - String:
 
@@ -309,10 +326,10 @@ JavaScript Style Guide
         object.prop === undefined
         ```
 
-##Comments
+## Comments
 
 
-##Sources and Other Useful Guides
+## Sources and Other Useful Guides
 * [Google](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
 * [idiomatic.js](https://github.com/rwaldron/idiomatic.js/)
 * [jQuery](http://contribute.jquery.org/style-guide/js/)
