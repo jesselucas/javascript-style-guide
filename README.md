@@ -201,7 +201,28 @@ JavaScript Style Guide
 
     ```
 
+- When storing a reference to ```this``` use ```_this``` 
+
+    ```javascript
+    // Bad
+    function() {
+        var self = this;
+        return function() {
+            console.log(self);
+        };
+    }
+
+    // Good
+    function() {
+        var _this = this;
+        return function() {
+            console.log(_this);
+        };
+    }
+    ```
+    
 ##Quotes
+
 - Use double quotes
 
     ```javascript
@@ -215,7 +236,78 @@ JavaScript Style Guide
     ```
 
 
-##Type Checking
+##Type Checking - [jQuery Core Style Guidelines](http://contribute.jquery.org/style-guide/js/)
+
+- String:
+
+    ```javascript 
+    typeof object === "string"
+    ```
+    
+- Number: 
+
+    ```javascript 
+    typeof object === "number"
+    ```
+
+- Boolean:
+
+    ```javascript 
+    typeof object === "boolean"
+    ```
+
+- Object:
+
+    ```javascript 
+    typeof object === "object"
+    ```
+
+- Plain Object:
+
+    ```javascript 
+    jQuery.isPlainObject(object)
+    ```
+
+- Function
+
+    ```javascript 
+    jQuery.isFunction( object )
+    ```
+    
+- Array: 
+    ```javascript 
+    jQuery.isArray( object )
+    ```
+
+- Element: 
+    
+    ```javascript 
+    object.nodeType
+    ```
+
+- null: 
+    ```javascript 
+    object === null
+    ```
+
+- null or undefined: 
+    ```javascript 
+    object == null
+    ```
+
+- undefined:
+    - Global Variables: 
+        ```javascript 
+        typeof variable === "undefined" 
+        ```
+    - Local Variables: 
+        ```javascript 
+        variable === undefined
+        ```
+    - Properties: 
+        ```javascript 
+        object.prop === undefined
+        ```
 
 ##Comments
 
