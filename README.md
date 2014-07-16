@@ -8,200 +8,212 @@ JavaScript Style Guide
 
 ##Linting
 
-Use JSHint for formatting, and make sure to follow it's advice. You should set JSHint options in a ```.jshintrc``` file. Read the JSHint docs for more information: http://www.jshint.com/docs/
+- Use JSHint for formatting, and make sure to follow it's advice. You should set JSHint options in a ```.jshintrc``` file. Read the JSHint docs for more information: http://www.jshint.com/docs/
+
+- Please reference the provided ```.jshintrc``` file for our preferred options
 
 ##Spacing
 
-In general we prefer the formating of JsFormat - https://github.com/jdc0589/JsFormat
-
 - Always use braces for if/else/for/while/try with  line breaks and whitespace before and after parens.
 
-```javascript
-// Bad
-if(condition) doSomething();
+    ```javascript
+    // Bad
+    if(condition) doSomething();
 
-for(var i=0;i<10;i++) someFunction();
+    for(var i=0;i<10;i++) someFunction();
 
-// Good 
-if (condition) {
-    doSomething();
-}
+    // Good 
+    if (condition) {
+        doSomething();
+    }
 
 
-for (var i = 0; i < 10; i++) {
-    SomeFunction();
-}
-```
+    for (var i = 0; i < 10; i++) {
+        SomeFunction();
+    }
+    ```
 
 ## Variables and Assignments
 
 - Always use the ```var``` keyword to declare variables otherwise it will be declared in the global namespace.
 
-```
-// Bad
-foo = false;
+    ```javascript
+    // Bad
+    foo = false;
 
-// Good
-var foo = false;
-```
+    // Good
+    var foo = false;
+    ```
 
 - Only use ```var``` one time when declaring multiple variables
 
-```
-// Bad
-var foo = false;
-var bar = true;
-var person = "";
-var i = 0;
+    ```javascript
+    // Bad
+    var foo = false;
+    var bar = true;
+    var person = "";
+    var i = 0;
 
-// Good
-var foo = false,
-    bar = true,
-    person = "",
-    i = 0;
+    // Good
+    var foo = false,
+        bar = true,
+        person = "",
+        i = 0;
 
-```
+    ```
 
 - Declare unassigned variables last and on their own line.
 
-```
-// Bad
-var person, i, 
-    foo = false;
-    bar = true;
+    ```javascript
+    // Bad
+    var person, i, 
+        foo = false;
+        bar = true;
 
-// Good
-var foo = false;
-    bar = true
-    person,
-    i;
-```
+    // Good
+    var foo = false;
+        bar = true
+        person,
+        i;
+    ```
 
 ##Objects
 
 - Use literal notation when declaring objects
 
-```javascript
-// Bad
-var item = new Object();
+    ```javascript
+    // Bad
+    var item = new Object();
 
-// Good
-var item = {};
-```
+    // Good
+    var item = {};
+    ```
 
 ##Arrays
 
 - Use literal notation when declaring arrays
 
-```javascript
-// Bad
-var list = new Array();
+    ```javascript
+    // Bad
+    var list = new Array();
 
-// Good
-var list = [];
-```
+    // Good
+    var list = [];
+    ```
 
 ##Conditionals and Equality
 
 - Always use identity comparison operators (```===```) and (```!==```). The (```==```) and (```!=```) operators do type coercion and should not be used. 
 
-```javascript
-// Bad
-if (foo == 1) {
-    doSomething();
-} else if (foo != 1) {
-    doSomethingIfElse();
-} else {
-    doSomethingElse();
-}
+    ```javascript
+    // Bad
+    if (foo == 1) {
+        doSomething();
+    } else if (foo != 1) {
+        doSomethingIfElse();
+    } else {
+        doSomethingElse();
+    }
 
-// Good
-if (foo === 1) {
-    doSomething();
-} else if (foo !== 1) {
-    doSomethingIfElse();
-} else {
-    doSomethingElse();
-}
-```
+    // Good
+    if (foo === 1) {
+        doSomething();
+    } else if (foo !== 1) {
+        doSomethingIfElse();
+    } else {
+        doSomethingElse();
+    }
+    ```
 - The only exception is when checking undefined or null against null
 
-```javascript
-// Check for both undefined and null values, for some important reason.
-undefinedOrNull == null;
-```
+    ```javascript
+    // Check for both undefined and null values, for some important reason.
+    undefinedOrNull == null;
+    ```
 
 ##Functions
 
 - Declare your variables at the beginning of the function 
 
-```
-// Bad
-function bad() {
-    // some statements
+    ```javascript
+    // Bad
+    function bad() {
+        // some statements
 
-    var item = {};
-}
+        var item = {};
+    }
 
-// Good
-function good() {
-    var item = {};
+    // Good
+    function good() {
+        var item = {};
 
-    // some statement
-}
-```
+        // some statement
+    }
+    ```
 
 - Don't declare a function in a non-function block
 
-```
-// Bad
-if (item) {
-    function bad() {
-        // don't do this
+    ```javascript
+    // Bad
+    if (item) {
+        function bad() {
+            // don't do this
+        }
     }
-}
 
-// Good
-var good;
-if (item) {
-    good = function good() {
-        // do this
-    };
-}
-```
+    // Good
+    var good;
+    if (item) {
+        good = function good() {
+            // do this
+        };
+    }
+    ```
 
 ##Naming
 
 - Make variables and function names full words and try to be descriptive using camelCase
 
-```
-// Bad
-function check(w) {
-    // check wArray and return word
-    return w;
-}
+    ```javascript
+    // Bad
+    function check(w) {
+        // check wArray and return word
+        return w;
+    }
 
-var i, mArray=new Array();
-for(i=0;i<wArray.length;i++){mArray.push(check())};
+    var i, mArray=new Array();
+    for(i=0;i<wArray.length;i++){mArray.push(check())};
 
-// Good
-function checkForWord(word) {
-    // Check words array and return word
-    return word;
-}
+    // Good
+    function checkForWord(word) {
+        // Check words array and return word
+        return word;
+    }
 
-var i = 0,
-    matches = [],
-    length = words.length,
-    match;
+    var i = 0,
+        matches = [],
+        length = words.length,
+        match;
 
-for ( ; i < length; i++) {
-    match = checkForWord(words[i]);
-}
+    for ( ; i < length; i++) {
+        match = checkForWord(words[i]);
+    }
 
-```
+    ```
 
 ##Quotes
+- Use double quotes
+
+    ```javascript
+    var fullName = "Muhammad Ali";
+    ```
+
+- Use single quotes inside strings
+
+    ```javascript
+    var span = "<span class='.firstName'></span>";
+    ```
+
 
 ##Type Checking
 
