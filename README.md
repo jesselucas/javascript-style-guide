@@ -33,6 +33,50 @@ for (var i = 0; i < 10; i++) {
 }
 ```
 
+## Variables and Assignments
+
+- Always use the ```var``` keyword to declare variables otherwise it will be declared in the global namespace.
+
+```
+// Bad
+foo = false;
+
+// Good
+var foo = false;
+```
+
+- Only use ```var``` one time when declaring multiple variables
+
+```
+// Bad
+var foo = false;
+var bar = true;
+var person = "";
+var i = 0;
+
+// Good
+var foo = false,
+    bar = true,
+    person = "",
+    i = 0;
+
+```
+
+- Declare unassigned variables last and on their own line.
+
+```
+// Bad
+var person, i, 
+    foo = false;
+    bar = true;
+
+// Good
+var foo = false;
+    bar = true
+    person,
+    i;
+```
+
 ##Objects
 
 - Use literal notation when declaring objects
@@ -125,6 +169,42 @@ if (item) {
     };
 }
 ```
+
+##Naming
+
+- Make variabls and function names full words and try to be descriptive using camelCase
+
+```
+// Bad
+function check(w) {
+    return w;
+}
+
+var i, wArray=new Array();
+for(i=0;i<wArray.length;i++){check(wArray[i])};
+
+// Good
+function checkForWord(word) {
+    return word;
+}
+
+var i = 0,
+    words = [],
+    length = words.length,
+    match;
+
+for ( ; i < length; i++) {
+    match = checkForWord(words[i]);
+}
+
+```
+
+##Quotes
+
+##Type Checking
+
+##Comments
+
 
 ##Sources and Other Useful Guides
 * [Google](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
