@@ -158,7 +158,7 @@ JavaScript Style Guide
     ```javascript
     // Bad
     function bad() {
-        // some statements
+        // Some statements
 
         var item = {};
     }
@@ -167,7 +167,7 @@ JavaScript Style Guide
     function good() {
         var item = {};
 
-        // some statement
+        // Some statement
     }
     ```
 
@@ -177,7 +177,7 @@ JavaScript Style Guide
     // Bad
     if (item) {
         function bad() {
-            // don't do this
+            // Don't do this
         }
     }
 
@@ -185,7 +185,7 @@ JavaScript Style Guide
     var good;
     if (item) {
         good = function good() {
-            // do this
+            // Do this
         };
     }
     ```
@@ -197,7 +197,7 @@ JavaScript Style Guide
     ```javascript
     // Bad
     function check(w) {
-        // check wArray and return word
+        // Check wArray and return word
         return w;
     }
 
